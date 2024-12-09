@@ -1,0 +1,142 @@
+/* CSS da interface */
+*{
+    margin: ;
+    padding: ;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 40px;
+} 
+.Flex{
+ display:flex;
+}
+/* Css inferface */
+
+/*CSS Cabeçalho */
+
+header{
+    padding: 30px 4%;
+}
+
+header > .interface{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+header a:hover{
+    color: rgba(221, 68, 68, 0.61);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .btn-contato button{
+   padding: 10px 40px;
+   font-size: 18px;
+   font-weight: 700;
+   background-color: rgb(204, 70, 70);
+   border: 0;
+   border-radius: 0;
+   cursor: pointer;
+}
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(224, 148, 148, 0.452);
+}
+/* Estilo topo */
+section.Topo-site{
+    padding: 40px 4%;
+
+}
+section.Top-site.Flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.Topo-site h1{
+    color: black;
+    font-size: 50px;
+    line-height: 40px;
+}
+.Topo-site h1 span{
+    color: rgb(204, 118, 118);
+    font-size: 60;
+    cursor: pointer;
+    
+}
+.Topo-site h1 span:hover{
+    transform: scale(1.05);
+}
+.txttoposite p{
+    color: rgb(155, 69, 47);
+    margin: 40px 10px;
+}
+.Topo-site .img-topo-site img{
+    position: relative;
+    animation: tripidar 5s ease-in-out infinite alternate ;
+   
+}
+@keyframes tripidar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 40px;
+        
+    }
+    100%{
+        left: 100px;
+    }
+    
+}
+/* Estilo sobre */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+
+section.sobre .Flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: brown;
+    font-size: 30px;
+}
+.sobre .txt-sobre span{
+    color: black;
+    font-size: 60px;
+    text-align: justify;
+}
+section.Formacao{
+    padding: 80px 4%;
+    font-size: 35px;
+}
+
+section.Projetos{
+    padding: 80px 4%;
+    font-size: 35px;
+}
